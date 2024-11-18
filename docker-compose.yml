@@ -1,0 +1,8 @@
+# version: '3.8'
+services:
+  sast-toolkit:
+    build: .
+    volumes:
+      - ./src:/app/src
+      - ./config:/app/config
+    entrypoint: ["bearer", "scan", "--config-file", "/app/config/bearer-config.yml", "/app/src"]

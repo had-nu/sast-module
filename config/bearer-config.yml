@@ -7,4 +7,4 @@ scan:
   filetypes: [".js", ".py", ".java", ".ts"]
 output:
   format: json
-  file: /app/results/output.json
+  file: ./results/output.json
